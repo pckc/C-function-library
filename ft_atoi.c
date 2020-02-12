@@ -3,15 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:12:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/01/29 13:04:20 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/12 10:52:47 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+static int	ft_isspace(char const c)
+{
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\v'
+		|| c == '\r' || c == '\f')
+		return (1);
+	return (0);
+}
+
+int			ft_atoi(const char *str)
 {
 	int	i;
 	int	num;
@@ -22,19 +31,19 @@ int		ft_atoi(const char *str)
 	sinal = 1;
 	if (str == '\0')
 		return (0);
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+	while (ft_isspace(str[i]) != '\0')
 		i++;
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			sinal = sinal * -1;
+			sinal = (-1);
 		i++;
 	}
 	while (str[i] == 0)
 		i++;
-	while (str[i] != '0' && ft_isdigit(str[i]))
+	while (ft_isdigit(str[i]) != '\0')
 	{
-		num = (num * 10) + (str[i] - '0');
+		num = num * 10 + str[i] - '0';
 		i++;
 	}
 	return (num * sinal);

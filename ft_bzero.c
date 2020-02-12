@@ -3,20 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 15:17:40 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/01/29 16:34:31 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/05 04:33:46 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-		if	(n != 0)
-		{
-			memset(s, 0, n);
-		}
-	return(s);
+	ft_memset(s, '\0', n);
 }

@@ -3,24 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 15:32:14 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/01/29 17:01:25 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/05 05:02:55 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void		*ft_memset(void *b, int c, size_t len)
 {
 	size_t	swap;
 
 	swap = 0;
-	while (swap < len)
+	if (len > 0)
 	{
-		((unsigned char*)b)[swap] = c;
+		while (swap < len)
+		{
+			((unsigned char*)b)[swap] = (unsigned char)(c);
 			swap++;
+		}
 	}
-	return(b);
+	return (b);
 }

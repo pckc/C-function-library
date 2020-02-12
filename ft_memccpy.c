@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 20:24:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/12 14:08:17 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/02/05 07:24:37 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/02/05 08:05:59 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_isalpha(int c)
+void * ft_memccpy(void * destination, const void * source, int c, size_t num);
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		return (1);
-	}
-	return (0);
+    if (destination == 0 && source == 0)
+        return (0);
+    
 }

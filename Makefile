@@ -3,20 +3,19 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pde-carv <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 15:51:10 by pde-carv          #+#    #+#              #
-#    Updated: 2020/01/29 15:51:48 by pde-carv         ###   ########.fr        #
+#    Updated: 2020/02/12 17:21:37 by pde-carv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libft.a
 SRC	= ft_strlen.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c \
-	ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c \
-	ft_memset.c
+	ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c \
+	ft_tolower.c ft_memset.c ft_bzero.c ft_strnstr.c
 OBJ	= $(SRC:.c=.o)
-#BONUS_SRC	= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-#	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+BONUS_SRC	= 
 BONUS_OBJ	= $(BONUS_SRC:.c=.o)
 HEADERS	= libft.h
 CFLAGS	= -Wall -Wextra -Werror
@@ -27,16 +26,20 @@ all: $(NAME)
 
 $(NAME):
 	@echo "\nCompilando..."
-	@echo "Por favor, aguarde."
+	@echo "Por favor, aguarde.\n"
 	gcc $(CFLAGS) -I $(HEADERS) -c $(SRC)
+	@echo "\n"
 	ar -rc $(NAME) $(OBJ)
+	@echo "\n"
 	ranlib $(NAME)
+	@echo "\n"
 	@echo "\n$(NAME) foi gerado!"
 
-bonus:
-	gcc $(CFLAGS) -I $(HEADERS) -c $(BONUS_SRC)
-	ar rc $(NAME) $(BONUS_SRC)
-	ranlib $(NAME)
+bonus: all
+
+	#gcc $(CFLAGS) -I $(HEADERS) -c $(BONUS_SRC)
+	#ar rc $(NAME) $(BONUS_SRC)
+	#ranlib $(NAME)
 
 run:
 	./$(NAME)
