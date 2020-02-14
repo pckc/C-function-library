@@ -6,14 +6,30 @@
 /*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 07:24:37 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/05 08:05:59 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/14 14:01:10 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void * ft_memccpy(void * destination, const void * source, int c, size_t num);
+
+void				*ft_memccpy(void *destination, const void *source, int c, size_t num)
 {
-    if (destination == 0 && source == 0)
-        return (0);
-    
+	size_t			i;
+	//unsigned char	*dest;
+	//unsigned char	*src;
+
+	i = 0;
+	//dest = (unsigned char *)destination;
+	//src = (unsigned char *)source;
+
+	if (destination == 0 && source == 0)
+		return (0);
+	while (num != '\0' && i < num)
+	{
+		((unsigned char *)destination[i]) = ((unsigned char *)source[i]);
+		if ((unsigned char*)const void *source[i]) == (unsigned char)c)
+			return ();
+		i++;
+	}
+	return(0);    
 }

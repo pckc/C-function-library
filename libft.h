@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 12:42:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/12 17:37:55 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/14 11:59:31 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 size_t	ft_strlen(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char    *strnstr(const char *haystack, const char *needle, size_t len);
+char	*strnstr(const char *haystack, const char *needle, size_t len);
 
 int		ft_atoi(const char *str);
 
