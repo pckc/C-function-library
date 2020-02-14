@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/12 15:10:46 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/14 12:27:14 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/14 15:53:37 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char		*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	if (needle[i] == 0)
-		return (char *)(haystack);
+		return ((char *)haystack);
 	while (haystack[i] != '\0')
 	{
 		j = 0;
