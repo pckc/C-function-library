@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/12 15:10:46 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/14 15:53:37 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/19 23:17:43 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char		*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		j = 0;
 		while (haystack[i + j] == needle[j] && (i + j) < len)
 		{
-			if (haystack[i + j] == 0 && needle[j] == 0)
+			while (haystack[i + j] == 0 && needle[j] == 0)
 				return ((char *)haystack + i);
 			j++;
 		}
@@ -33,5 +33,5 @@ char		*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			return ((char *)haystack + i);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }

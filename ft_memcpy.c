@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 20:42:46 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/17 18:07:40 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/02/19 19:31:48 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/02/19 21:08:44 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(long long c)
+#include "libft.h"
+
+void				*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
+	size_t			i;
+	unsigned char	*destiny;
+	unsigned char	*source;
+
+	i = 0;
+	destiny = dest;
+	source = (unsigned char*)src;
+	if (dest == 0 && src == 0)
+		return (0);
+	while (i < n)
+	{
+		destiny[i] = source[i];
+		i++;
+	}
+	return (destiny);
 }

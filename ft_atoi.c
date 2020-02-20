@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:12:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/12 10:52:47 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/02/19 19:25:42 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,20 @@ static int	ft_isspace(char const c)
 	return (0);
 }
 
+/*
+** Verificar tamanho MAX_LONG - FT_STRTOL
+** long	max_min()
+** if (num < -9223372036854775808 )
+** 	return (-1);
+** if (num > 9223372036854775807)
+** 	return (0);
+*/
+
 int			ft_atoi(const char *str)
 {
-	int	i;
-	int	num;
-	int	sinal;
+	int		i;
+	int		num;
+	int		sinal;
 
 	i = 0;
 	num = 0;
