@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 21:34:23 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 12:55:22 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/03/11 14:45:13 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,15 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*aux_dst;
 	char	*aux_src;
 
-	i = 0;
+	i = -1;
 	aux_dst = (char*)dst;
 	aux_src = (char*)src;
 	if (dst == 0 && src == 0)
 		return (0);
 	if (dst < src)
 	{
-		while (i < len)
+		while (++i < len)
 			aux_dst[i] = aux_src[i];
-		i++;
 	}
 	else
 	{

@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 17:44:27 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 12:32:35 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/03/11 14:15:06 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 **
 **	Returns
 **	-------
-**	A pointer to the located character or NULL if c isn't found
+**	A pointer to the located character's address or NULL if c isn't found
 */
 
 char	*ft_strchr(const char *s, int c)
@@ -33,10 +33,10 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i] != 0)
 	{
 		if (s[i] == (char)c)
-			return ((char*)(s + i));
+			return ((char*)&s[i]);
 		i++;
 	}
-	if (s[i] == '\0')
-		return ((char *)s);
+	if (c == '\0')
+		return ((char *)&s[i]);
 	return (NULL);
 }
