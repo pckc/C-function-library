@@ -1,43 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/29 15:32:14 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 13:12:06 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/02/28 17:44:27 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/03/11 12:32:35 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Fills the pointed string with the value determined by c
+**	Locates the first ocurrence of a character in a string
 **
 **	Variables
 **	---------
-**	void *b: pointer to the memory to be filled
-**	int c: value meant to be stored in each byte
-**	size_t len: number of bytes to be filled
+**	const void *s: string you want to search
+**	int c: character you are looking for
 **
 **	Returns
 **	-------
-**	A pointer to the destination string
+**	A pointer to the located character or NULL if c isn't found
 */
 
-void		*ft_memset(void *b, int c, size_t len)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	swap;
+	size_t	i;
 
-	swap = 0;
-	if (len > 0)
+	i = 0;
+	while (s[i] != 0)
 	{
-		while (swap < len)
-		{
-			((unsigned char*)b)[swap] = (unsigned char)(c);
-			swap++;
-		}
+		if (s[i] == (char)c)
+			return ((char*)(s + i));
+		i++;
 	}
-	return (b);
+	if (s[i] == '\0')
+		return ((char *)s);
+	return (NULL);
 }

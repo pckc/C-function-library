@@ -3,42 +3,49 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 07:24:37 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/15 15:39:08 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/03/11 12:43:54 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				*ft_memccpy(void *destination, const void *source, int c, size_t num)
+/*
+**	Copies bytes from a source string to a destiny string,
+**	until the byte c is found
+**
+**	Variables
+**	---------
+**	void *dest:	a pointer to the string where the data will be copied
+**	const void *src: a pointer to the string to be copied from
+**	int c: 	byte that limits the copy
+**	size_t n: maximum number of bytes to be copied
+**
+**	Returns
+**	-------
+**	A pointer to the byte after the occurence of c in the destiny string
+**	destiny[i + 1]
+*/
+
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	size_t			i;
-/*
-** 	unsigned char	*dest;
-** 	unsigned char	*src;
-*/
+	unsigned char	*destiny;
+	unsigned char	*source;
 
 	i = 0;
-/*
-** 	dest = (unsigned char *)destination;
-** 	src = (unsigned char *)source;
-*/
-
-	if (destination == 0 && source == 0)
+	destiny = dest;
+	source = (unsigned char*)src;
+	if (dest == 0 && src == 0)
 		return (0);
-	while (num != '\0' && i < num)
+	while (i < n)
 	{
-/*
-** 		*((unsigned char *)destination) = *((unsigned char *)source);
-*/
-  
-		((unsigned char *)destination)[i] = ((unsigned char *)source)[i];
-
-		if (*((unsigned char *)source) == ((unsigned char)c))
-			return ();
+		destiny[i] = source[i];
+		if (((unsigned char *)source)[i] == (unsigned char)c)
+			return (dest + i + 1);
 		i++;
 	}
-	return(0);    
+	return (NULL);
 }

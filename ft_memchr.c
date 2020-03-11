@@ -1,46 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/19 19:31:48 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 12:49:14 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/03/06 14:05:15 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/03/11 12:30:10 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Copies bytes from a source string to a destiny string
+**	Locates the first ocurrence of a byte in a buffer
 **
 **	Variables
 **	---------
-**	void *dest:	a pointer to the string where the data will be copied
-**	const void *src: a pointer to the string to be copied from
-**	size_t n: number of bytes to be copied
+**	const void *s : buffer you want to search
+**	int c : byte you are looking for
+**	size_t n: number of bytes to search in the string
 **
 **	Returns
 **	-------
-**	A pointer to the destination string
+**	A pointer to the located byte
+**	Another way to write the return is: return (&aux_s[i])
 */
 
-void				*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*destiny;
-	unsigned char	*source;
+	unsigned char	*aux_s;
 
 	i = 0;
-	destiny = dest;
-	source = (unsigned char*)src;
-	if (dest == 0 && src == 0)
+	aux_s = (unsigned char *)s;
+	if (s == 0)
 		return (0);
 	while (i < n)
 	{
-		destiny[i] = source[i];
+		if (((unsigned char *)aux_s)[i] == (unsigned char)c)
+			return (void *)(aux_s + i);
 		i++;
 	}
-	return (destiny);
+	return (NULL);
 }

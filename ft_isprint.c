@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 19:51:05 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/01/29 13:02:51 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/03/11 13:16:37 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Tests a character to see if it is a printable character including spaces
+**
+**	Variables
+**	---------
+**	int c: the character to be tested
+*/
 
 int	ft_isprint(int c)
 {

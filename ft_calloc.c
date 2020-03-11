@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <pde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 15:35:15 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/02/15 20:40:43 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/03/11 13:20:34 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Allocates memory space from the heap, for an array with "count" objetcs
+**
+**	Variables
+**	---------
+**	size_t count: number of objetcs in the array
+**	size_t size: size of the elements, in bytes
+**
+**	Returns
+**	-------
+*/
 
 void		*ft_calloc(size_t count, size_t size)
 {
