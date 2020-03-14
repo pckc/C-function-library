@@ -1,49 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 20:28:30 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/13 18:25:32 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/03/12 18:57:25 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/03/12 19:05:22 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Checks the total length of a string
+**	Copies as string up to (dstsize - 1) from the source string to the
+**	destiny string
 **
 **	Variables
 **	---------
-**	const char *src: A pointer to the string
+**	char *dst: A pointer to the destination string
+**	const char *src: A pointer to the source string
+**	size_t dstsize: Size of the destination buffer
 **
 **	Returns
 **	-------
-**	The lenght of the string
+**	The lenght of the string, meaning the length of src
 */
 
-size_t		ft_strlen(const char *str)
-{
-	size_t	len;
+ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+ {
+	 size_t	len_src;
 
-	len = 0;
-	while (*str++ != '\0')
-		len++;
-	return (len);
-}
-
-/*
-** --------
-** Older implementation without pointer aritmetics
-** --------
-** 	size_t	i;
-** 	i = 0;
-** 	while (str[i] != '\0')
-** 	{
-** 		i++;
-** 	}
-** 	return (i);
-**  }
-*/
+	 len_src = ft_strlen(src);
+ }

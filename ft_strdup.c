@@ -1,49 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 20:28:30 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/13 18:25:32 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/03/11 18:24:32 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/03/11 19:55:09 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Checks the total length of a string
+**	Creates a duplicate of a string
 **
 **	Variables
 **	---------
-**	const char *src: A pointer to the string
+**	const char *src = string to be copied from
 **
 **	Returns
 **	-------
-**	The lenght of the string
+**	A pointer to the copy the string str or NULL
 */
 
-size_t		ft_strlen(const char *str)
+char	*ft_strdup(const char *src)
 {
+	size_t	i;
 	size_t	len;
+	char	*dest;
 
-	len = 0;
-	while (*str++ != '\0')
-		len++;
-	return (len);
+	i = 0;
+	len = ft_strlen(src);
+	dest = (char *)malloc(sizeof(char) * (len + 1));
+	if (dest == 0)
+		return (0);
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
-
-/*
-** --------
-** Older implementation without pointer aritmetics
-** --------
-** 	size_t	i;
-** 	i = 0;
-** 	while (str[i] != '\0')
-** 	{
-** 		i++;
-** 	}
-** 	return (i);
-**  }
-*/
