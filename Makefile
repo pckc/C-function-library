@@ -29,7 +29,7 @@ all: $(NAME)
 $(NAME):
 	@echo "\nCompilando..."
 	@echo "Por favor, aguarde.\n"
-	gcc $(CFLAGS) -I $(HEADERS) -c $(SRC)
+	gcc $(CFLAGS) -l $(HEADERS) -c $(SRC)
 	@echo "\n"
 	ar -rc $(NAME) $(OBJ)
 	@echo "\n"
@@ -39,9 +39,9 @@ $(NAME):
 
 bonus: all
 
-	#gcc $(CFLAGS) -I $(HEADERS) -c $(BONUS_SRC)
-	#ar rc $(NAME) $(BONUS_SRC)
-	#ranlib $(NAME)
+	gcc $(CFLAGS) -l $(HEADERS) -c $(BONUS_SRC)
+	ar rc $(NAME) $(BONUS_SRC)
+	ranlib $(NAME)
 
 run:
 	./$(NAME)

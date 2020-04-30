@@ -45,7 +45,7 @@ int			ft_atoi(const char *str)
 	i = 0;
 	num = 0;
 	sinal = 1;
-	if (str == '\0')
+	if (*str == '\0')
 		return (0);
 	while (ft_isspace(str[i]) != '\0')
 		i++;
