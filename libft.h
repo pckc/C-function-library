@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 12:42:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/13 18:32:59 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/02 02:15:48 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
-
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strchr(const char *s, int c);
@@ -44,5 +43,12 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t length);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+
+void	ft_putchar(char c);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putnbr(int n);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr(char *str);
+void	ft_putstr_fd(char *s, int fd);
 
 #endif
