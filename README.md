@@ -3,7 +3,7 @@
 ## Description
 The first project required at the **42 School - São Paulo** curriculum.
 
-The goal is to re-write popular **C** functions from scratch and build our very own library.
+The goal is to re-write popular **C** functions from scratch and build our very own library. Check the [Subject here](https://github.com/pckc/libft/blob/master/libft.en.subject.pdf)
 
 ## What is **42 São Paulo**?
 42 is a Software Engineering school with a very human and collaborative approach. There are no teachers. Students receive challenging projects from the school but must pursue knowledge among themselves. Sharing, teaching and collaborating are key.
@@ -26,7 +26,7 @@ Other commands may be found inside the Makefile.
 
 *_The bonus part refers to linked list manipulation_
 
-Part 1 |Part 2| Bonus Part|Aditional Functions| 
+Part 1  |Part 2| Bonus Part|Aditional Functions| 
 |----------------|---------------------|-----------------|-----------
 | ft_atoi      |   ft_itoa        | ft_lstadd_back | ft_putnbr 	|  
 | ft_bzero    |   ft_putchar_fd        | ft_lstadd_front     | ft_putchar      |
