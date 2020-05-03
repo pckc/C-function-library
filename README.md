@@ -3,7 +3,9 @@
 ## Description
 The first project required at the **42 School - São Paulo** curriculum.
 
-The goal is to re-write popular **C** functions from scratch and build our very own library. Check the [Subject here](https://github.com/pckc/libft/blob/master/libft.en.subject.pdf)
+The goal is to re-write popular **C** functions from scratch and build our very own library. Check the [Subject here](https://github.com/pckc/libft/blob/master/libft.en.subject.pdf).
+
+Documenting the functions was not required but I believe it was very useful, especially regarding the didactic nature of the project.
 
 ## What is **42 São Paulo**?
 42 is a Software Engineering school with a very human and collaborative approach. There are no teachers. Students receive challenging projects from the school but must pursue knowledge among themselves. Sharing, teaching and collaborating are key.
