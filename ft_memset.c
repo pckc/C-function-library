@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 15:32:14 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 13:12:06 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:19:38 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Fills the pointed string with the value determined by c
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	void *b: pointer to the memory to be filled
 **	int c: value meant to be stored in each byte
 **	size_t len: number of bytes to be filled

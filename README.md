@@ -23,7 +23,7 @@ make clean
 ```
 Other commands may be found inside the Makefile.
 
-## Content of the library
+# Content of the library
 *_Every function is preceeded by the suffix ft__ _as per requested_
 
 *_The bonus part refers to linked list manipulation_

@@ -6,18 +6,20 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 21:34:23 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 14:45:13 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:18:17 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Copies "len" bytes from a source string to a destiny string
 **	This function handles (allows) overlapping regions, unlike ft_memcpy
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	void *dst:	a pointer to the string where the data will be copied
 **	const void *src: a pointer to the string to be copied from
 **	size_t len: number of bytes to be copied

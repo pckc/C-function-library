@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 18:07:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/14 21:00:31 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:26:51 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Checks the total length of a string up to a maximum value
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const char *src: A pointer to the string
 **	size_t maxlen: Maximum size of the string
 **

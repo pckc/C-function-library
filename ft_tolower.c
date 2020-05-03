@@ -6,15 +6,17 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 12:17:21 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 13:26:04 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:26:35 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
+**	Description
+**	-----------
 **	Converts uppercase characters to lowercase ones
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	int c: the character to be converted
 */
 

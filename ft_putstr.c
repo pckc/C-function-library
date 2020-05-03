@@ -6,15 +6,25 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 02:07:38 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/02 17:05:33 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:13:07 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+**	Description
+**	-----------
+**	
+**
+**	Parameters
+**	----------
+**	
+*/
+
 void	ft_putstr(char *str)
 {
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		ft_putchar(*str);
 		str++;

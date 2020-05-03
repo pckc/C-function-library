@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 14:05:15 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 12:30:10 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:16:18 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Parameters
+**	----------
 **	Locates the first ocurrence of a byte in a buffer
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const void *s : buffer you want to search
 **	int c : byte you are looking for
 **	size_t n: number of bytes to search in the string

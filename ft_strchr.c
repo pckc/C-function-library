@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 17:44:27 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 14:15:06 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:27:18 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Locates the first ocurrence of a character in a string
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const void *s: string you want to search
 **	int c: character you are looking for
 **

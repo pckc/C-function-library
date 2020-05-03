@@ -6,13 +6,15 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 15:35:15 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 14:38:22 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:23:49 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Allocates memory space from the heap, for an array with "count" elements
 **
 **	Variables

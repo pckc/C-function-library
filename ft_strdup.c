@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 18:24:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 19:55:09 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:27:28 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Creates a duplicate of a string
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const char *src = string to be copied from
 **
 **	Returns

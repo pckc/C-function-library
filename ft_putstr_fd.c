@@ -6,11 +6,21 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 02:09:41 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/02 02:16:50 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:24:53 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Description
+**	-----------
+**	
+**
+**	Parameters
+**	----------
+**	
+*/
 
 void	ft_putstr_fd(char *s, int fd)
 {

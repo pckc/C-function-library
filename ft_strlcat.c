@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 20:01:22 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/14 21:38:40 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:27:38 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Concatenates two strings, up to (dstsize - 1)
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	char *dst: A pointer to the destination string
 **	const char *src: A pointer to the source string
 **	size_t dstsize: Size of the destination buffer

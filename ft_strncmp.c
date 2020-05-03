@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:26:19 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 22:44:26 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:27:05 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Compares the bytes of two different buffers
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const char *s1: pointer to the first element of the 1st string
 **	const char *s2: pointer to the first element of the 2nd string
 **	size_t n: maximum number of bytes to compare

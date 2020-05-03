@@ -6,18 +6,20 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 07:24:37 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 16:10:11 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:24:07 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Copies bytes from a source string to a destiny string,
 **	until the byte c is found
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	void *dest:	a pointer to the string where the data will be copied
 **	const void *src: a pointer to the string to be copied from
 **	int c: 	byte that limits the copy

@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:24:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 13:14:49 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:24:01 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Tests a character to see if it is alphanumeric
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	int c: the character to be tested
 */
 

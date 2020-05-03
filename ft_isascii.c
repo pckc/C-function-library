@@ -6,15 +6,17 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 20:11:33 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 13:15:31 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:24:04 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
+**	Description
+**	-----------
 **	Tests a character to see if it is an ASCII character
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	int c: the character to be tested
 */
 

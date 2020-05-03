@@ -6,11 +6,21 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 01:52:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/02 18:11:16 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:24:43 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Description
+**	-----------
+**	
+**
+**	Parameters
+**	----------
+**	
+*/
 
 void	ft_putnbr(int n)
 {

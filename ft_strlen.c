@@ -6,17 +6,19 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:28:30 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/13 18:25:32 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:27:47 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+**	Description
+**	-----------
 **	Checks the total length of a string
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const char *src: A pointer to the string
 **
 **	Returns

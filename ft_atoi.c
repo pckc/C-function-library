@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:12:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/03/11 13:02:03 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 00:23:27 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,12 @@ static int	ft_isspace(char const c)
 }
 
 /*
+**	Description
+**	-----------
 **	Checks the pointed string and converts characters to integers
 **
-**	Variables
-**	---------
+**	Parameters
+**	----------
 **	const char *str:	a pointer to the string to parse
 **
 **	Returns
