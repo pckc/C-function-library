@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/02 01:33:55 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 15:49:07 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/03 21:01:17 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/04 15:58:38 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 **	Description
 **	-----------
-**	Outputs a given character.
+**	Checks for the occurence of all sorts of blank spaces.
 **
 **	Parameters
 **	----------
-**	char c: the character to be outputed.
+**	char const c: the character to be verified.
 */
 
-void	ft_putchar(char c)
+int	ft_isspace(char const c)
 {
-	write(1, &c, 1);
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\v'
+		|| c == '\r' || c == '\f')
+		return (1);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 12:42:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/02 02:15:48 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:31:12 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_isspace(char const c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -50,5 +51,7 @@ void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr(char *str);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl(char *s);
+void	ft_putendl_fd(char *s, int fd);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 15:17:40 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:23:16 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:55:38 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 /*
 **	Description
 **	-----------
-**	Writes zeroes in the place of bytes
+**	Writes zeroes in the place of bytes.
 **
 **	Parameters
 **	----------
-***	void *s: string to be filled
-**	size_t n: number of bytes to fill
+***	void *s: string to be filled.
+**	size_t n: number of bytes to fill.
 */
 
 void	ft_bzero(void *s, size_t n)

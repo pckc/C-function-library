@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 15:35:15 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:23:49 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:55:29 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 /*
 **	Description
 **	-----------
-**	Allocates memory space from the heap, for an array with "count" elements
+**	Allocates memory space from the heap, for an array with "count" elements.
 **
 **	Variables
 **	---------
-**	size_t count: number of elements in the array
-**	size_t size: size of the elements, in bytes
+**	size_t count: number of elements in the array.
+**	size_t size: size of the elements, in bytes.
 **
 **	Returns
 **	-------

@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 12:31:57 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:23:43 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:55:16 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 /*
 **	Description
 **	-----------
-**	Tests a character to see if it is numeric
+**	Tests a character to see if it is numeric.
 **
 **	Parameters
 **	----------
-**	int c: the character to be tested
+**	int c: the character to be tested.
 */
 
 int	ft_isalnum(int c)

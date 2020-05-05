@@ -6,18 +6,18 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 12:17:21 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:26:35 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:57:30 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 **	Description
 **	-----------
-**	Converts uppercase characters to lowercase ones
+**	Converts uppercase characters to lowercase ones.
 **
 **	Parameters
 **	----------
-**	int c: the character to be converted
+**	int c: the character to be converted.
 */
 
 int	ft_tolower(int c)

@@ -6,23 +6,11 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:12:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:23:27 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/03 21:02:03 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-**	Checks for the occurence of all sorts of blank spaces
-*/
-
-static int	ft_isspace(char const c)
-{
-	if (c == ' ' || c == '\n' || c == '\t' || c == '\v'
-		|| c == '\r' || c == '\f')
-		return (1);
-	return (0);
-}
 
 /*
 **	Description

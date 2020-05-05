@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 20:01:22 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:27:38 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:55:59 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,18 @@
 /*
 **	Description
 **	-----------
-**	Concatenates two strings, up to (dstsize - 1)
+**	Concatenates two strings, up to (dstsize - 1).
 **
 **	Parameters
 **	----------
-**	char *dst: A pointer to the destination string
-**	const char *src: A pointer to the source string
-**	size_t dstsize: Size of the destination buffer
+**	char *dst: A pointer to the destination string.
+**	const char *src: A pointer to the source string.
+**	size_t dstsize: Size of the destination buffer.
 **
 **	Returns
 **	-------
 **	The lenght of the string, meaning the lenght of "dst"
-**	plus the length of "src"
+**	plus the length of "src".
 */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)

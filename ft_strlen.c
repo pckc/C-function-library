@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:28:30 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:27:47 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:56:26 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 /*
 **	Description
 **	-----------
-**	Checks the total length of a string
+**	Checks the total length of a string.
 **
 **	Parameters
 **	----------
-**	const char *src: A pointer to the string
+**	const char *src: A pointer to the string.
 **
 **	Returns
 **	-------
-**	The lenght of the string
+**	The lenght of the string.
 */
 
 size_t		ft_strlen(const char *str)

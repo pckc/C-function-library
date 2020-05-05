@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 19:51:05 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:11:48 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:54:33 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 /*
 **	Description
 **	-----------
-**	Tests a character to see if it is a printable character including spaces
+**	Tests a character to see if it is a printable character including spaces.
 **
 **	Parameters
 **	----------
-**	int c: the character to be tested
+**	int c: the character to be tested.
 */
 
 int	ft_isprint(int c)

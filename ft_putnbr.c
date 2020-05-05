@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 01:52:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:24:43 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/04 15:52:07 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 /*
 **	Description
 **	-----------
-**	
+**	Outputs a integer as a character.
 **
 **	Parameters
 **	----------
-**	
+**	int n: the integer to be written.
 */
 
 void	ft_putnbr(int n)
