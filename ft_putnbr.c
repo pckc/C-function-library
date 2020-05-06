@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 01:52:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 15:52:07 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 01:34:52 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ void	ft_putnbr(int n)
 	{
 		if (n < 0 && n != -2147483648)
 		{
-			ft_putchar ('-');
+			ft_putchar('-');
 			n = n * -1;
-		}	
+		}
 		if (n / 10)
 			ft_putnbr(n / 10);
 		ft_putchar(n % 10 + 48);

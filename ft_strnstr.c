@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/12 15:10:46 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/03 00:28:02 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 01:38:40 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 /*
 **	Description
 **	-----------
-**	
+**
 **
 **	Parameters
 **	----------
-**	
+**
 */
 
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len)

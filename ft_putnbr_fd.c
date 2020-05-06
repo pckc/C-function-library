@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 01:45:45 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 15:52:24 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 01:36:10 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@
 **	given number (0 is the stdin, 1 is the stdout, 2 is the stderr).
 */
 
-void    ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
-			ft_putstr_fd("-2147483648", fd);
+		ft_putstr_fd("-2147483648", fd);
 	else
 	{
 		if (n < 0 && n != -2147483648)

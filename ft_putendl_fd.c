@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/04 15:25:50 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 21:50:59 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 01:46:48 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
 **	Description
 **	-----------
-
 **	Outputs a given string followed by a new line after its end to a given
 **	file descriptor.
 **

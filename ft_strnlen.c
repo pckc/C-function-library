@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 18:07:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 15:57:01 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 01:37:46 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ size_t	ft_strnlen(const char *s, size_t maxlen)
 	len = 0;
 	while ((*s++ != '\0') && (len < maxlen))
 		len++;
-	return(len);
+	return (len);
 }

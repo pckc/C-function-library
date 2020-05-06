@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/05 18:28:39 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/05 20:52:15 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 01:51:32 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,16 @@
 **
 **	Parameters
 **	----------
-**	char *s: the string to be converted. 
+**	char *s: the string to be converted.
 */
 
 char	*ft_strupcase(char *s)
 {
-	//unsigned char *up = (unsigned char *)s;
-	int len = ft_strlen(s);
+	size_t len;
 
+	len = ft_strlen(s);
 	while (*s)
 	{
-/*
-** 		TO TEST: ft_toupper((unsigned char)*s);
-**		read about the necessity to cast it to unsigned char?
-**		read: man toupper
-**		Why ft_toupper isn't converting to uppercase?
-*/
 		if (*s >= 'a' && *s <= 'z')
 			*s = *s - 32;
 		s++;
