@@ -6,7 +6,7 @@
 #    By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 15:51:10 by pde-carv          #+#    #+#              #
-#    Updated: 2020/05/04 15:31:15 by pde-carv         ###   ########.fr        #
+#    Updated: 2020/05/05 22:49:03 by pde-carv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ SRC	= ft_strlen.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c \
 	ft_memcpy.c ft_memccpy.c ft_memmove.c ft_strchr.c ft_memchr.c \
 	ft_memcmp.c ft_strdup.c ft_strlcat.c ft_strnlen.c ft_putchar.c \
 	ft_putchar_fd.c ft_putnbr.c ft_putnbr_fd.c ft_putstr.c \
-	ft_putstr_fd.c ft_isspace.c ft_putendl.c ft_putendl_fd.c
+	ft_putstr_fd.c ft_isspace.c ft_putendl.c ft_putendl_fd.c ft_strupcase.c \
+	ft_strlcpy.c
 OBJ	= $(SRC:.c=.o)
 BONUS_SRC	= 
 BONUS_OBJ	= $(BONUS_SRC:.c=.o)

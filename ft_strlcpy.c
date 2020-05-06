@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/12 18:57:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 18:35:11 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 00:26:54 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,20 +32,21 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;
-	size_t	dst_len;
 	size_t	i;
-
-	src_len = ft_strlen(src);
-	dst_len = ft_strlen(dst);
+	
 	i = 0;
+	src_len = ft_strlen(src);
 
-	if (dstsize <= dst_len)
-		return(dstsize + src_len);
-	while (dst_len <= dstsize - 1)
+	if (dst == 0 || src == 0)
+		return (0);
+	else if (dstsize != 0)
 	{
-		*dst = *src;
-		dst++;
+		while(*src && i < dstsize - 1)
+		{
+			*dst++ = *src++;
+			i++;
+		}
+		*dst = '\0';
 	}
-
-	return ()
+	return (src_len);
 }
