@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 20:12:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/07 01:16:11 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/06 23:48:26 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/07 02:19:08 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,42 +15,48 @@
 /*
 **	Description
 **	-----------
-**	Checks the pointed string and converts characters to integers
+**	Converts characters to integers
 **
 **	Parameters
 **	----------
-**	const char *str:	a pointer to the string to parse
+**	int n: the integer to be converted
 **
 **	Returns
 **	-------
 **	The converted integer with its apropriate signal
 */
 
-int			ft_atoi(const char *str)
+char	*ft_itoa(int n)
 {
+	char	*s;
 	int		i;
-	int		num;
-	int		sinal;
+	int		n_cpy;
 
 	i = 0;
-	num = 0;
-	sinal = 1;
-	if (*str == '\0')
-		return (0);
-	while (ft_isspace(str[i]) != '\0')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	n_cpy = n;
+	while (n_cpy)
 	{
-		if (str[i] == '-')
-			sinal = (-1);
+		n_cpy = n_cpy / 10;
 		i++;
 	}
-	while (str[i] == 0)
+	n_cpy = n;
+	if (n <= 0)
 		i++;
-	while (ft_isdigit(str[i]) != '\0')
+	s = (char *)malloc(sizeof(char) * (i + 1));
+	if (s == NULL)
+		return (NULL);
+
+	s[i] = '\0';
+	while (i--)
 	{
-		num = num * 10 + str[i] - '0';
-		i++;
+		s[i] = (n_cpy % 10);
+		s[i] = s[i] * ((n_cpy < 0) ? -1 : 1);
+		s[i] = s[i] + '0';
+		n_cpy /= 10;
 	}
-	return (num * sinal);
+	if (n < 0)
+		s[0] = '-';
+	if (n == 0)
+		s[0] = '0';
+	return (s);
 }

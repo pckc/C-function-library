@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 01:45:45 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/06 01:36:10 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/06 23:21:10 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,15 @@ void	ft_putnbr_fd(int n, int fd)
 			ft_putchar_fd('-', fd);
 			n = n * (-1);
 		}
-/*
-** 		In this case n/10 is used as a boolean condition,
-** 		since in C zero is always true and anything else is false.
-** 		Other possibilities would be ((n/10) > 0 || (-n/10) > 0) or
-** 		(n >= 10 || n <= -10)
-*/
 		if (n / 10)
 			ft_putnbr_fd(n / 10, fd);
 		ft_putchar_fd(n % 10 + 48, fd);
 	}
 }
+
+/*
+**	In the last case n/10 is used as a boolean condition,
+**	since in C zero is always false and anything else is true.
+**	Other possibilities would be ((n/10) > 0 || (-n/10) > 0) or
+**	(n >= 10 || n <= -10)
+*/

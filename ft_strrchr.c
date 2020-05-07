@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/04 14:49:05 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/06 23:49:22 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/07 02:27:27 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 **	Description
 **	-----------
-**	Outputs a string followed by a new line (\n) after its end.
+**	Finds the last occurrence of a character in the pointed string
 **
 **	Parameters
 **	----------
-**	char *s: the string to output
+**	const char *str: a pointer to the string to parse
+**	int c: element to be located
+**
+**	Returns
+**	-------
+**	A pointer to the to the found character
 */
 
-void	ft_putendl(char *s)
+char	*ft_strrchr(const char *s, int c)
 {
-	if (s != 0)
-	{
-		while (*s)
-		{
-			write(1, &*s, 1);
-			s++;
-		}
-		write(1, "\n", 1);
-	}
+
 }
