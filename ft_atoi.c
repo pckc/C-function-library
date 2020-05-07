@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 20:12:32 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/07 01:16:11 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/07 02:52:10 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 **
 **	Parameters
 **	----------
-**	const char *str:	a pointer to the string to parse
+**	const char *str: a pointer to the string to parse
 **
 **	Returns
 **	-------

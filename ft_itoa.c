@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/06 23:48:26 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/07 02:19:08 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/07 02:53:27 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ char	*ft_itoa(int n)
 	s = (char *)malloc(sizeof(char) * (i + 1));
 	if (s == NULL)
 		return (NULL);
-
 	s[i] = '\0';
 	while (i--)
 	{
