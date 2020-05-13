@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/09 20:50:43 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/12 15:20:41 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/13 11:48:37 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,20 @@
 /*
 **	Description
 **	-----------
-**	Finds the last occurrence of a character 'c' in the pointed string 's'.
+**	Takes a element of the list and frees the memory of it's content,
+**	without freeing the memory of the next element.
 **
 **	Parameters
 **	----------
-**	const char *str: a pointer to the string to parse.
-**	int c: element to be located.
-**
-**	Returns
-**	-------
-**	A pointer to the to the found character.
+**	t_list *lst: the head of the list.
+**	void (*del)(void*): function 'del'
 */
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	int		n;
-	char	*backup;
-
-	backup = (char *)s;
-	n = ft_strlen(backup);
-	if (s[n] == '\0' && c == '\0')
-		return (&backup[n]);
-	while (n--)
+	if (lst != NULL && del != NULL)
 	{
-		if (s[n] == c)
-			return (&backup[n]);
+		del(lst->content);
+		free(lst);
 	}
-	return (0);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/09 20:50:43 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/12 15:05:38 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/13 11:28:41 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,26 @@
 /*
 **	Description
 **	-----------
-**	Finds the last occurrence of a character 'c' in the pointed string 's'.
+**	Counts the number of elements in a linked list.
 **
 **	Parameters
 **	----------
-**	const char *str: a pointer to the string to parse.
-**	int c: element to be located.
+**	t_list *lst: the head of the list.
 **
 **	Returns
 **	-------
-**	A pointer to the to the found character.
+**	The lenght of the linked list.
 */
 
-char	*ft_strrchr(const char *s, int c)
+int	ft_lstsize(t_list *lst)
 {
-	int		n;
-	char	*backup;
+	size_t i;
 
-	backup = (char *)s;
-	n = ft_strlen(backup);
-	if (s[n] == '\0' && c == '\0')
-		return (&backup[n]);
-	while (n--)
+	i = 0;
+	while (lst != NULL)
 	{
-		if (s[n] == c)
-			return (&backup[n]);
+		lst = lst->next;
+		i++;
 	}
-	return (0);
+	return (i);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/09 20:50:43 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/12 15:33:57 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/13 11:48:33 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,26 @@
 /*
 **	Description
 **	-----------
-**	Finds the last occurrence of a character 'c' in the pointed string 's'.
+**	Deletes and frees a given element and all the sucessor elements from that
+**	list. After this the pointer to the list is setted to NULL.
 **
 **	Parameters
 **	----------
-**	const char *str: a pointer to the string to parse.
-**	int c: element to be located.
-**
-**	Returns
-**	-------
-**	A pointer to the to the found character.
+**	t_list **lst: the address of a pointer to an element.
+**	void (*del)(void*): the address of the function use to delete an element
+**	and free its memory.
 */
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	int		n;
-	char	*backup;
+	t_list		*nextlst;
 
-	backup = (char *)s;
-	n = ft_strlen(backup);
-	if (s[n] == '\0' && c == '\0')
-		return (&backup[n]);
-	while (n--)
+	while (*lst && del)
 	{
-		if (s[n] == c)
-			return (&backup[n]);
+		del((*lst)->content);
+		nextlst = (*lst)->next;
+		free(*lst);
+		*lst = nextlst;
 	}
-	return (0);
+	lst = NULL;
 }

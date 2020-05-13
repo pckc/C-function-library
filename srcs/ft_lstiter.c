@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/09 20:50:43 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/12 15:25:38 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/13 11:48:44 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,19 @@
 /*
 **	Description
 **	-----------
-**	Finds the last occurrence of a character 'c' in the pointed string 's'.
+**	Iterates trought a linked list applying the function 'f' to each element.
 **
 **	Parameters
 **	----------
-**	const char *str: a pointer to the string to parse.
-**	int c: element to be located.
-**
-**	Returns
-**	-------
-**	A pointer to the to the found character.
+**	t_list *lst: a pointer to an element.
+**	void (*f)(void*): the address of the used function.
 */
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int		n;
-	char	*backup;
-
-	backup = (char *)s;
-	n = ft_strlen(backup);
-	if (s[n] == '\0' && c == '\0')
-		return (&backup[n]);
-	while (n--)
+	while (lst != NULL && f != NULL)
 	{
-		if (s[n] == c)
-			return (&backup[n]);
+		f(lst->content);
+		lst = lst->next;
 	}
-	return (0);
 }

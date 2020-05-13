@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 12:42:09 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/07 01:06:51 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/13 11:44:29 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,18 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+typedef	struct		s_list
+{
+	void				*content;
+	struct s_list		*next;
+}					t_list;
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strdup(const char *src);
 char	*ft_itoa(int n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 size_t	ft_strlen(const char *str);
 size_t	ft_strnlen(const char *s, size_t maxlen);
@@ -57,5 +64,15 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl(char *s);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strupcase(char *s);
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+void	ft_lstclear(t_list **lst, void (*del)(void*));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif

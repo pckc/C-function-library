@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/09 20:50:43 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/11 18:23:13 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/13 11:28:54 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,27 @@
 /*
 **	Description
 **	-----------
-**	Finds the last occurrence of a character 'c' in the pointed string 's'.
+**	Allocates memory on the heap to create and insert a new element on a
+**	existing Linked List.
 **
 **	Parameters
 **	----------
-**	const char *str: a pointer to the string to parse.
-**	int c: element to be located.
+**	void *content: the content of the newly created element.
 **
 **	Returns
 **	-------
-**	A pointer to the to the found character.
+**	The new element.
 */
 
-char	*ft_strrchr(const char *s, int c)
+t_list	*ft_lstnew(void *content)
 {
-	int		n;
-	char	*backup;
+	t_list *new_node;
 
-	backup = (char *)s;
-	n = ft_strlen(backup);
-	if (s[n] == '\0' && c == '\0')
-		return (&backup[n]);
-	while (n--)
+	new_node = malloc(sizeof(t_list));
+	if (new_node != NULL)
 	{
-		if (s[n] == c)
-			return (&backup[n]);
+		new_node->content = content;
+		new_node->next = NULL;
 	}
-	return (0);
+	return (new_node);
 }

@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/07 00:23:03 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/09 20:50:43 by pde-carv         ###   ########.fr       */
+/*   Created: 2020/05/13 10:49:25 by pde-carv          #+#    #+#             */
+/*   Updated: 2020/05/13 10:50:47 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 **	Description
@@ -27,19 +25,23 @@
 **	A pointer to the to the found character.
 */
 
-char	*ft_strrchr(const char *s, int c)
-{
-	int		n;
-	char	*backup;
+#include "libft.h"
 
-	backup = (char *)s;
-	n = ft_strlen(backup);
-	if (s[n] == '\0' && c == '\0')
-		return (&backup[n]);
-	while (n--)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	size_t	i;
+	char	*sub_str;
+
+	if (!s)
+		return (NULL);
+	if (!(sub_str = malloc(sizeof(char) * (len + 1))))
+		return (NULL);
+	i = start;
+	while (i < (start + len))
 	{
-		if (s[n] == c)
-			return (&backup[n]);
+		sub_str[i - start] = s[i];
+		i++;
 	}
-	return (0);
+	sub_str[i - start] = '\0';
+	return (sub_str);
 }
