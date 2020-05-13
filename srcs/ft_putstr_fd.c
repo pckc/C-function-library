@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/02 02:09:41 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/06 01:36:24 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/13 17:41:50 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,12 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s != '\0')
+	if (s != NULL)
 	{
-		ft_putchar_fd(*s, fd);
-		s++;
+		while (*s != '\0')
+		{
+			ft_putchar_fd(*s, fd);
+			s++;
+		}
 	}
 }
