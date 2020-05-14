@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 14:56:35 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 15:53:47 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/13 16:34:48 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	while ((aux_s1[i] != '\0') && (aux_s1[i] == aux_s2[i]))
+	while ((aux_s1[i]) && (aux_s2) && (aux_s1[i] == aux_s2[i]))
 	{
 		if (i < n - 1)
 			i++;

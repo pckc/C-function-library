@@ -6,7 +6,7 @@
 #    By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 15:51:10 by pde-carv          #+#    #+#              #
-#    Updated: 2020/05/13 11:17:35 by pde-carv         ###   ########.fr        #
+#    Updated: 2020/05/13 20:21:35 by pde-carv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS	= ft_strlen.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c \
 	ft_memcmp.c ft_strdup.c ft_strlcat.c ft_strnlen.c ft_putchar.c \
 	ft_putchar_fd.c ft_putnbr.c ft_putnbr_fd.c ft_putstr.c \
 	ft_putstr_fd.c ft_isspace.c ft_putendl.c ft_putendl_fd.c ft_strupcase.c \
-	ft_strlcpy.c ft_itoa.c ft_strrchr.c ft_substr.c
+	ft_strlcpy.c ft_itoa.c ft_strrchr.c ft_substr.c ft_strjoin.c
 OBJS	= $(SRCS:.c=.o)
 BONUS_SRCS	= ft_lstnew.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 	ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstadd_back.c ft_lstsize.c

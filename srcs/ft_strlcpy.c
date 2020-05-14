@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/12 18:57:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/06 01:53:09 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/13 21:28:10 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 **	Description
 **	-----------
-**	Copies as string up to (dstsize - 1) from the source string to the
+**	Copies a string up to (dstsize - 1) from the source string to the
 **	destiny string.
 **
 **	Variables
