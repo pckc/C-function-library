@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:48:28 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 19:07:21 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/14 19:29:48 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,17 @@
 /*
 **	Description
 **	-----------
-**	Parse a string searching for a delimiter and split the string,
-**	in an array containing the found strings.
+** Iterates trough the string 's' applying the function 'f' to each character,
+** thus generating a new string from this applications. 
 **
 **	Parameters
 **	----------
-**	char const *s: the string to split.
-**	char c: the char to be used as delimiter.
+**	char const *s: the string to be iterated.
+**	char (*f)(unsigned int, char): the function to be applied.
 **
 **	Returns
 **	-------
-**	An array of the strings resulted from the split.
-**	NULL in case the allocation fails.	
+** The string created from the applications of the function 'f'.	
 */
 
 int    ft_strlen_split(char *str, char c)
