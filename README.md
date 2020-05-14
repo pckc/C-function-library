@@ -64,7 +64,7 @@ Pedro C. K. Chinelli : [GitHub](https://github.com/pckc)
 ## Useful tools
 There a three great tests, made by students:
 - [**Libftest**](https://github.com/jtoty/Libftest), by [jtoty](https://github.com/jtoty)
-- [**Libf Unit Test**](https://github.com/alelievr/,libft-unit-test), by [Antoine Lelievre](https://github.com/alelievr)
+- [**Libf Unit Test**](https://github.com/alelievr/libft-unit-test), by [Antoine Lelievre](https://github.com/alelievr)
 - [**Libft War Machine**](https://github.com/ska42/libft-war-machine), by [ska42](https://github.com/ska42)
 
 If you are a student working on your own library: **be strong and try to make your own mains and tests!**
