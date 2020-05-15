@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/13 10:49:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 21:50:00 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/14 22:01:59 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 **
 **	Returns
 **	-------
-**	The substring, NULL if allocation fails.	
+**	The substring, NULL if allocation fails.
 */
 
 #include "libft.h"
@@ -36,7 +36,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (start > ft_strlen(s))
 		start = ft_strlen(s);
-	if  (len > ft_strlen(s) - start)
+	if (len > ft_strlen(s) - start)
 		len = (ft_strlen(s) - start);
 	if (!s)
 		return (NULL);

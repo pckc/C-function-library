@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:49:22 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 21:44:56 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/14 22:02:33 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	Description
 **	-----------
 ** Iterates trough the string 's' applying the function 'f' to each character,
-** thus generating a new string from this applications. 
+** thus generating a new string from this applications.
 **
 **	Parameters
 **	----------
@@ -25,7 +25,7 @@
 **
 **	Returns
 **	-------
-** The string created from the applications of the function 'f'.	
+** The string created from the applications of the function 'f'.
 */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
@@ -38,7 +38,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	{
 		i = 0;
 		j = ft_strlen((char *)s);
-		if(!(fstr = (char *)malloc(j * sizeof(fstr))))
+		if (!(fstr = (char *)malloc(j * sizeof(fstr))))
 			return (NULL);
 		while (s[i] != 0)
 		{

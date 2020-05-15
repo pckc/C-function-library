@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/13 20:20:36 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 20:45:17 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/14 22:04:07 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	lenght = ft_strlen((char*)s1) + ft_strlen((char*)s2);
 	if (!(s3 = (char *)malloc(sizeof(char) * (lenght + 1))))
-		return (NULL); 
+		return (NULL);
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	while (*s1 != '\0')
