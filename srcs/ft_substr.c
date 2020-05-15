@@ -6,9 +6,11 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/13 10:49:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 23:14:03 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/15 04:25:05 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 **	Description
@@ -26,8 +28,6 @@
 **	-------
 **	The substring, NULL if allocation fails.
 */
-
-#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:48:28 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 22:06:01 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/15 04:35:22 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,61 +29,68 @@
 **	NULL in case the allocation fails.
 */
 
-int	ft_strlen_split(char *str, char c)
+/*
+** int	main()
+** {
+** 	char *in = "pedro-de-carv";
+** 	char **out = ft_split(in, '-');
+** 	int i = 0;
+** 	while (*((*out)+i))
+** 	{
+** 		ft_putendl(*((*out)+i));
+** 		i++;
+** 	}
+** }
+**
+**
+**
+** testar: *s = "split  ||this|for|me|||||!|";
+**
+** char	*string = "      split       this for   me  !       ";
+*/
+
+#include "libft.h"
+
+char	**ft_split(const char *s, char c)
 {
-	int i;
-	int j;
+	int		i;
+	int		j;
+	int		k;
+	char	**split;
+	int		words;
 
 	i = 0;
-	j = 0;
-	while (str[i])
+	words = 1;
+	while (s[i] != '\0')
 	{
-		if (str[i] == c)
-		{
-			 while (str[i] != '\0')
-			{
-				j++;
-				i++;
-			}
-			return(j);
-		}
+		if (s[i] == c && s[i + 1] != c && s[i + 1] != '\0')
+			words++;
 		i++;
 	}
-	return (0);
-}
-
-char **ft_split(char const *s, char c)
-{
-	char *split;
-	char ref;
-	int i;
-	int j;
-	int count;
-	char *ptr;
-	 
-	i = 0;
-	j = 0;
-	split = (char*)s;
-	ref = c;
-	count = ft_strlen_split((char*)s, c);
-	ptr = (char *)malloc(sizeof(char) * (count + 1));
-	if (s == NULL)
+	if (!(split = (char **)malloc((words + 1) * sizeof(char *))))
 		return (NULL);
-	while (split[i] != '\0')
+	i = 0;
+	k = 0;
+	while (k < words)
 	{
-		if (split[i] == c)
+		while (s[i] == c)
+			i++;
+		j = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (!(split[k] = (char *)malloc((i - j + 1) * sizeof(char))))
+			return (NULL);
+		i = j;
+		while (s[i] && s[i] != c)
 		{
-			while (split[i] != '\0')
-			{
-				ptr[j] = split[i];
-				j++;
-				i++;
-			}
-			ptr[j] = '\0';
-			return ((char**)ptr);
+			split[k][i - j] = s[i];
+			i++;
 		}
-		i++;
+		split[k][i - j] = '\0';
+		while (s[i] == c)
+			i++;
+		k++;
 	}
-	free(ptr);
-	return (0);
+	split[k] = NULL;
+	return (split);
 }
