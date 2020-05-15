@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/13 10:49:25 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 22:01:59 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/14 23:14:03 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	char	*sub_str;
 
+	if (!(s))
+		return (NULL);
 	if (start > ft_strlen(s))
 		start = ft_strlen(s);
 	if (len > ft_strlen(s) - start)
 		len = (ft_strlen(s) - start);
-	if (!s)
-		return (NULL);
 	if (!(sub_str = malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	i = start;

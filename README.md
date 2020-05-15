@@ -58,14 +58,13 @@ Part 1  |Part 2| Bonus Part|Aditional Functions|
 | ft_tolower    |                     |                 |                 |
 | ft_toupper    |                     |                 |                 |
 
-## Author
-Pedro C. K. Chinelli : [GitHub](https://github.com/pckc)
 
 ## Useful tools
 There a three great tests, made by students:
 - [**Libftest**](https://github.com/jtoty/Libftest), by [jtoty](https://github.com/jtoty)
 - [**Libf Unit Test**](https://github.com/alelievr/libft-unit-test), by [Antoine Lelievre](https://github.com/alelievr)
 - [**Libft War Machine**](https://github.com/ska42/libft-war-machine), by [ska42](https://github.com/ska42)
+- [**Libft Destructor**](https://github.com/t0mm4rx/libftdestructor), by [Tom Marx](https://github.com/t0mm4rx)
 
 If you are a student working on your own library: **be strong and try to make your own mains and tests!**
 
@@ -77,9 +76,14 @@ If you are a student working on your own library: **be strong and try to make yo
 	gcc -Wall -Werror -Wextra -fsanitize=address -g
 	```
 
+- [Repl.it](https://repl.it/) - IDE on the browser 
 - [C Tutor](http://pythontutor.com/c.html) - a visual tool to debug code on the browser
 
 - [Debugging with VSCode](https://code.visualstudio.com/docs/editor/debugging)
 
 - [42 header in VIM](https://github.com/pbondoer/vim-42header), by [Pierre Bondoerffer](https://github.com/pbondoer)
 - [42 header in VSCode](https://marketplace.visualstudio.com/items?itemName=kube.42header), by [Kube](https://marketplace.visualstudio.com/publishers/kube)
+
+
+## Author
+[Pedro C. K. Chinelli](https://github.com/pckc)

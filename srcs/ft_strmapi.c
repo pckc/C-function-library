@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:49:22 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 22:02:33 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/15 00:11:08 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (s && f)
 	{
 		i = 0;
-		j = ft_strlen((char *)s);
-		if (!(fstr = (char *)malloc(j * sizeof(fstr))))
+		if (!(fstr = (char *)malloc(ft_strlen(s) + 1)))
 			return (NULL);
 		while (s[i] != 0)
 		{
