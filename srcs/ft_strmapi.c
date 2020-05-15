@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:49:22 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/15 00:11:08 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/15 14:37:31 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*fstr;
 	unsigned int	i;
-	int				j;
 
 	if (s && f)
 	{

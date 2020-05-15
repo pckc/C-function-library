@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:48:28 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/15 04:35:22 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/15 15:12:15 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,66 +29,69 @@
 **	NULL in case the allocation fails.
 */
 
-/*
-** int	main()
-** {
-** 	char *in = "pedro-de-carv";
-** 	char **out = ft_split(in, '-');
-** 	int i = 0;
-** 	while (*((*out)+i))
-** 	{
-** 		ft_putendl(*((*out)+i));
-** 		i++;
-** 	}
-** }
-**
-**
-**
-** testar: *s = "split  ||this|for|me|||||!|";
-**
-** char	*string = "      split       this for   me  !       ";
-*/
+int		count_words(const char *s, char c)
+{
+	int	i;
+	int	words;
 
-#include "libft.h"
+	i = 0;
+	words = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] != c && i == 0)
+			words++;
+		else if (s[i] && s[i] == c && s[i + 1] != c && s[i + 1] != '\0')
+			words++;
+		i++;
+	}
+	return (words);
+}
+
+char	*ft_getfields(int *a, const char *s, char c)
+{
+	char	*field;
+	int		j;
+	int		i;
+
+	i = *a;
+	field = NULL;
+	while (s[i] == c)
+		i++;
+	j = i;
+	while (s[i] && s[i] != c)
+		i++;
+	if (!(field = (char *)malloc((i - j + 1) * sizeof(char))))
+		return (NULL);
+	i = j;
+	while (s[i] && s[i] != c)
+	{
+		field[i - j] = s[i];
+		i++;
+	}
+	field[i - j] = '\0';
+	while (s[i] && s[i] == c)
+		i++;
+	*a = i;
+	return (field);
+}
 
 char	**ft_split(const char *s, char c)
 {
 	int		i;
-	int		j;
 	int		k;
 	char	**split;
 	int		words;
 
-	i = 0;
-	words = 1;
-	while (s[i] != '\0')
-	{
-		if (s[i] == c && s[i + 1] != c && s[i + 1] != '\0')
-			words++;
-		i++;
-	}
+	if (!s)
+		return (NULL);
+	words = count_words(s, c);
 	if (!(split = (char **)malloc((words + 1) * sizeof(char *))))
 		return (NULL);
 	i = 0;
 	k = 0;
 	while (k < words)
 	{
-		while (s[i] == c)
-			i++;
-		j = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (!(split[k] = (char *)malloc((i - j + 1) * sizeof(char))))
-			return (NULL);
-		i = j;
-		while (s[i] && s[i] != c)
-		{
-			split[k][i - j] = s[i];
-			i++;
-		}
-		split[k][i - j] = '\0';
-		while (s[i] == c)
-			i++;
+		split[k] = ft_getfields(&i, s, c);
 		k++;
 	}
 	split[k] = NULL;
