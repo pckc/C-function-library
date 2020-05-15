@@ -6,7 +6,7 @@
 /*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 14:05:15 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/04 15:54:01 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/14 21:39:47 by pde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t			i;
-	unsigned char	*aux_s;
+	unsigned char	*src;
 
-	i = 0;
-	aux_s = (unsigned char *)s;
-	if (s == 0)
-		return (0);
-	while (i < n)
+	src = (unsigned char *)s;
+	while (n-- > 0)
 	{
-		if (((unsigned char *)aux_s)[i] == (unsigned char)c)
-			return (void *)(aux_s + i);
-		i++;
+		if (*src == (unsigned char)c)
+			return (src);
+		src++;
 	}
 	return (NULL);
 }
